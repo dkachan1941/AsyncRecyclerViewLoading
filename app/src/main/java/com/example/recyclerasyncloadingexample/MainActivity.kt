@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
         val button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
+            button.visibility = View.GONE
             recyclerView.visibility = View.VISIBLE
             recyclerView.layoutManager = LinearLayoutManager(this)
 //        recyclerView.adapter = RecyclerViewAdapter(createTestItems())
